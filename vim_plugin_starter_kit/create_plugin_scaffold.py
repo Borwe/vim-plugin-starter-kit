@@ -10,12 +10,12 @@ def create_scaffold():
 
 
 def get_user_inputs():
-    plugin_name = raw_input("Enter the name of your plugin => ")
-    github_user = raw_input("Enter your github user name => ")
-    file_specific = raw_input("Is this a file specific plugin? (y/n) => ")
+    plugin_name = input("Enter the name of your plugin => ")
+    github_user = input("Enter your github user name => ")
+    file_specific = input("Is this a file specific plugin? (y/n) => ")
     plugin_type = None
     if file_specific in ['y', 'Y']:
-        plugin_type = raw_input("What file type is it specific for? => ")
+        plugin_type = input("What file type is it specific for? => ")
         paths = get_paths(plugin_name, plugin_type)
         return paths, plugin_name, plugin_type, github_user
     paths = get_paths(plugin_name, plugin_type)

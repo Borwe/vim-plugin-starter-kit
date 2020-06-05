@@ -5,7 +5,7 @@ setup(
     name="vim-plugin-starter-kit",
     version='1.0.0',
     description="A tool that creates a scafold for Vim plugins to be written in Python.",
-    long_description=file('README.rst').read(),
+    long_description=open('README.rst').read(),
     author="Jarrod C. Taylor",
     author_email="jarrod.c.taylor@gmail.com",
     url="http://github.com/JarrodCTaylor/vim-plugin-starter-kit",
@@ -22,10 +22,5 @@ setup(
         'mock',
         'flake8'
     ],
-    test_suite='nose.collector',
-    entry_points={
-        'console_scripts': [
-            'vim-plugin-starter-kit = vim_plugin_starter_kit.create_plugin_scaffold:create_scaffold'
-        ]
-    }
+    test_suite='nose.collector'
 )

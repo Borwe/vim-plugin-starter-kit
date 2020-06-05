@@ -1,3 +1,0 @@
-nose
-mock
-flake8
